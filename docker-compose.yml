@@ -1,9 +1,11 @@
 version: "3.9"
 services: 
   site:
-   container_name: siteapp
-   image: siteapp
-   build:
-    context: https://github.com/CloudNStoyan/basicwebsite.git
-   ports:
-     - "80:80"
+    container_name: siteapp
+    image: siteapp
+    build:
+      context: https://github.com/CloudNStoyan/basicwebsite.git
+    ports:
+      - "80:80"
+    volumes:
+      - /images:/app/wwwroot/images
