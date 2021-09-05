@@ -8,4 +8,4 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /images:/app/wwwroot/images
+      - /test:/app/wwwroot/test
